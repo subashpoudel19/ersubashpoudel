@@ -1,4 +1,4 @@
-// A list of questions with possible answers.
+
 let questions = [
     {
         question: "What is the number of office bearer in the Municipal Executive(Assuming 11 Wards)?",
@@ -222,7 +222,7 @@ let questions = [
             {text: "1 year 6 months", correct: false}
         ],
         explanation: "The term of office may be extended not exceeding one year in case of state of emergency. In case of extension of the term of the office, it shall be ipso facto ended upon the completion of six months from the date of evocation of the state of emergency situation."
-    },
+    }
 ];
 
 // Quotes
