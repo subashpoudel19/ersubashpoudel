@@ -30,7 +30,6 @@ let questions = [
         ],
         explanation: "Chair-1, ViceChair-1, WardChair-11x1=11, WardMembers-11x4=44, Persons from Dalit or Minority Community-3; Total=60"
     }, 
-
     {
         question: "Against which of the office-bearers may the motion of impeachment NOT be introduced as per the Constitution of Nepal?",
         answers: [
