@@ -1,145 +1,386 @@
 
 let questions = [
     {
-        question: "Who can make the transfer, placement and deputation of personnel up to gazetted Third Class officer working under the department?",
+        question: "As of October, 2023, how many sovereign countries in the world have a monarch as the head of state?",
         answers: [
-            {text: "Head of the Department", correct: false},
-            {text: "Secretary", correct: false},
-            {text: "Chief Secretary", correct: true},
-            {text: "Chief Office-holder", correct: false}
+            {text: "29", correct: false},
+            {text: "32", correct: false},
+            {text: "43", correct: true},
+            {text: "25", correct: false}
         ],
-        explanation: "Secretary-> Upto Gazetted Class Two officers, Head of Department-> Upto Gazetted Class Three officers, Chief Office-holder-> Non-Gazetted Officers"
-    }, 
-    {
-        question: "What is the maximum and minimum number of wards permissible in Rural Municipality?",
-        answers: [
-            {text: "Min.5 Max.21", correct: true},
-            {text: "Min.7 Max.27", correct: false},
-            {text: "Min.9 Max.35", correct: false},
-            {text: "Min.10 Max.25", correct: false}
-        ],
-        explanation: "LSGA 2074"
-    }, 
-    {
-        question: "How many days before the new fiscal year, the Dar-Rate of local level should be published?",
-        answers: [
-            {text: "7 days", correct: false},
-            {text: "15 days", correct: true},
-            {text: "21 days", correct: false},
-            {text: "1 month", correct: false}
-        ],
-        explanation: "LSGA 2074"
-    }, 
-    {
-        question: "What is the title of officer who is responsible for managing the complaints of consumers?",
-        answers: [
-            {text: "Information Officer", correct: false},
-            {text: "Modal Officer", correct: false},
-            {text: "Section Officer", correct: false},
-            {text: "Nodal Officer", correct: true}
-        ],
-        explanation: "LSGR 2075"
-    }, 
-    {
-        question: "How many members are envisaged on the central monitoring and evaluation commmittee established as per Local Self-Governance Rules 2075?",
-        answers: [
-            {text: "11", correct: false},
-            {text: "9", correct: true},
-            {text: "8", correct: false},
-            {text: "7", correct: false}
-        ],
-        explanation: "Chief Secretary will be the co-ordinator"
-    }, 
-    {
-        question: "While sending work from one governmental office to another, a Head of Department or Office-holder or Section Officer labels the work as 'URGENT', what is the time period within which the receiver officer should send the answer?",
-        answers: [
-            {text: "3 days", correct: false},
-            {text: "2 days", correct: true},
-            {text: "7 days", correct: false},
-            {text: "15 days", correct: false}
-        ],
-        explanation: "URGENT-> (Head of Department or Office-holder or Section Officer) 2 days; VERY IMPORTANT-> (Same as above) 5 days; IMPORTANT (one level lower than Office-holder) 7 days; NORMAL-> (Related Officer) 15 days"
-    }, 
-    {
-        question: "What is the punishment for taking graft of amount between Twenty thousands rupees and Fifty thousands rupees?",
-        answers: [
-            {text: "Imprisonement for 4 to 6 months", correct: false},
-            {text: "Imprisonement for 6 to 1 year", correct: false},
-            {text: "Imprisonement for 3 to 4 months", correct: true},
-            {text: "Imprisonement for less than 3 months", correct: false}
-        ],
-        explanation: "<Rs.20,000(<3 months); 20,000 to 50,000(3-4 months); 50,000 to 1 lakh (4-6 months); 1 lakh to 5 lakhs (6 months-1.5yrs); 5 lakhs to 10 lakhs (1.5yrs-2.5yrs); 10 lakhs to 25 lakhs (2.5yrs-4yrs); 25 lakhs to 50 lakhs (4-6 yrs); 50 lakhs to 1 crore (6-8 yrs); >1 crore (8-10 yrs) "
-    }, 
-    {
-        question: "What is the punishment for taking gift, present, award or donation for a public servant?",
-        answers: [
-            {text: "3-6 months", correct: true},
-            {text: "4-6 months", correct: false},
-            {text: "Only goods confiscated", correct: false},
-            {text: "less than 3 months", correct: false}
-        ],
-        explanation: "Whoever, being a public servant, accepts, without a prior approval Government of Nepal or a public institution, any type of donation, gifts, presents, awards or any type of benefit him/herself or through any member of his/her family or other person, so as to causing an impact in any way on any of his/her works which is supposed to be carried out by him/her according to the office he/she assumes; or any public servant who borrows from a person related to a work which he/she has to carry out according to the office he assumes, shall be liable to a punishment of imprisonment from three to six months depending on the degree of the offence and the amount shall be confiscated. "
-    }, 
-    {
-        question: "What is the punishment for public servant for preparing false documents?",
-        answers: [
-            {text: "Imprisonement 3-6 months & fine 10 thousands to 20 thousands", correct: false},
-            {text: "Imprisonement 3-9 months & fine 10 thousands to 30 thousands", correct: false},
-            {text: "Imprisonement 3 months - 1 year & fine 10 thousands to 50 thousands", correct: true},
-            {text: "Imprisonement 3 months - 1 year 3 months & fine 30 thousands to 70 thousands", correct: false}
-        ],
-        explanation: "Whoever, being a public servant under the duty of preparing documents, prepares false documents with mala fide intention of causing loss to Government of Nepal or Government or public institution, shall be liable to a punishment of imprisonment for a term from three months to one year, and a fine from ten thousand to fifty thousand rupees."
-    }, 
-    {
-        question: "What is the punishment for public servant for tempering government documents?",
-        answers: [
-            {text: "Imprisonement 3-6 months & fine <10 thousands", correct: false},
-            {text: "Imprisonement 3-9 months & fine < 20 thousands", correct: false},
-            {text: "Imprisonement 3 months - 1 year & fine < 30 thousands", correct: false},
-            {text: "Imprisonement 3 months - 2 years & fine <50 thousands ", correct: true}
-        ],
-        explanation: "Whoever, either a public servant or any other person, corrects, adds, or changes in documents belonging to a government or public institution without authority or in an illegal manner, shall be liable to a punishment of imprisonment for a term from three months to two years and a fine not exceeding fifty thousands rupees. "
-    }, 
-    {
-        question: "What is the punishment for public servant for causing damage to government or public documents?",
-        answers: [
-            {text: "Imprisonement 3-6 months & fine 10 thousands to 20 thousands", correct: false},
-            {text: "Imprisonement 6 months - 1 year & fine 10 thousands to 50 thousands", correct: true},
-            {text: "Imprisonement 3 months - 1 year & fine 10 thousands to 50 thousands", correct: false},
-            {text: "Imprisonement 3 months - 1 year 3 months & fine 30 thousands to 70 thousands", correct: false}
-        ],
-        explanation: "Whoever, being a public servant, conceals a document belonging to government or to a public institution or causes damage to, or destroys, such document, shall be lia ble to a punishment of im prisonment from six month to one year and shall be fined from ten thousand to fifty thousa nd rupee s. In case any loss is incurred due to such concealment, damage or destruction, the losses shall also be recovered."
-    }, 
-    {
-        question: "What is the punishment for authorized person for disclosing secrecy of question papers or altering the result of examination?",
-        answers: [
-            {text: "Imprisonement 3 months - 1 year & fine 5 thousands to 10 thousands", correct: true},
-            {text: "Imprisonement 6 months - 1 year & fine 10 thousands to 15 thousands", correct: false},
-            {text: "Imprisonement 3 months - 6 months & fine 5 thousands to 15 thousands", correct: false},
-            {text: "Imprisonement 3 months - 1 year & fine 10 thousands to 20 thousands", correct: false}
-        ],
-        explanation: "Save in cases where the authorized person discloses or causes to disclose question papers of an examination to be conducted by a governme nt body or a public institution be fore the prescribed time having given reasons of special circumstances. Whoever, being a public servant, discloses or causes to disclose the secrecy of such question paper in any manner whatsoe ver, or alters or causes to alter the results of examinations with the intention of making illegal advantage to him/herself or any other person, shall be liable to a punishment of imprisonment from three months to one year and shall be fined from five thousand to ten thousand rupees."
-    }, 
-    {
-        question: "What is the punishment for public servant for engaging in illegal trade or business?",
-        answers: [
-            {text: "Imprisonement 3 months - 9 months & fine 10 thousands to 30 thousands", correct: false},
-            {text: "Imprisonement 3 months - 6 months & fine 10 thousands to 50 thousands", correct: true},
-            {text: "Imprisonement 3 months - 6 months & fine 20 thousands to 60 thousands", correct: false},
-            {text: "Imprisonement 3 months - 1 year & fine 30 thousands to 70 thousands", correct: false}
-        ],
-        explanation: "Whoever, being a public servant, engages in trade or business in his/her own name or in the name of other person or in partnership with others, takes part in auction or bidding, or becomes a partner in any firm or company or a cooperative organization while being prohibited by law, shall be liable a punishment of imprisonment for a term from three months to six months and a fine from ten thousand to fifty thousand rupees, and the property earned in such a manner shall be confiscated."
+        explanation: "43"
     },
     {
-        question: "What is the punishment for public servant for claiming false designation?",
+        question: "When was Nepal formally declared Federal Republic of Nepal?",
         answers: [
-            {text: "Imprisonement 3 months - 9 months & fine 10 thousands to 30 thousands", correct: false},
-            {text: "Imprisonement 6 months - 1 year & fine 30 thousands to 70 thousands", correct: false},
-            {text: "Imprisonement 6 months - 1 year 6 months & fine 40 thousands to 80 thousands", correct: false},
-            {text: "Imprisonement 1 year - 2 years & fine 50 thousands to 1 lakh", correct: true}
+            {text: "2065 Jestha 15", correct: true},
+            {text: "2063 Mangsir 5", correct: false},
+            {text: "2007 Falgun 7", correct: false},
+            {text: "2063 Baisakh 11", correct: false}
         ],
-        explanation: "Whoever, either a public servant or any other person falsely claims that he/she holds any position, power, capacity or facility or enjoys such position, power, capacity or facility of a public servant which he/she is not entitled to or displays any symbol, dress or mark relating to a position of a public servant or wears or displays any object resembling to such symbol, dress or mark with the intention of leading others to falsely believe that these are the official symbols, dresses or marks of a public servant, shall be liable to a punishment of imprisonment for a term from one year to two years and with a fine from fifty thousand to one hundred thousand rupees, depending on the degree of the offence committed."
+        explanation: "On May 28, 2008, the newly elected Constituent Assembly declared Nepal a Federal Democratic Republic, abolishing the 240 year-old monarchy. Nepal today has a President as Head of State and a Prime Minister heading the Government."
     },
+    {
+        question: "The political system in which two or more political parties take part in election with their manifesto and the party with two-thirds majority forms the government along with the Opposition party helps the current government?",
+        answers: [
+            {text: "Multi-party Democratic Parliamentary System", correct: true},
+            {text: "Authoritarian Regime", correct: false},
+            {text: "Presidential Republic", correct: false},
+            {text: "Single-party State", correct: false}
+        ],
+        explanation: "No explanation required."
+    },
+    {
+        question: "What does Zero hour refer to in a parliamentary system?",
+        answers: [
+            {text: "The time when Parliament convenes for its first session of the year.", correct: false},
+            {text: "The time when the Speaker of the House announces the official agenda for the day.", correct: false},
+            {text: "A designated period during the parliamentary session for Members of Parliament to raise important issues without prior notice.", correct: true},
+            {text: "The final hour of a parliamentary session when important bills are voted on.", correct: false}
+        ],
+        explanation: "Zero hour in a parliamentary system refers to a designated period during the parliamentary session when Members of Parliament can raise important issues without prior notice. This allows for discussions on urgent matters that may not be on the regular agenda."
+    },
+    {
+        question: "What is the Rule of Law?",
+        answers: [
+            {text: "The authority of the government to make and enforce laws.", correct: false},
+            {text: "The authority of the government to make and enforce laws.", correct: false},
+            {text: "A legal system where judges have the final say on all matters.", correct: true},
+            {text: "The concept that everyone, including government officials, is subject to and accountable under the law.", correct: false}
+        ],
+        explanation: "The Rule of Law is the concept that everyone, including government officials, is subject to and accountable under the law. It emphasizes that no one is above the law, and it is a fundamental principle in democratic societies. "
+    },
+    {
+        question: "Who is often credited with promoting and articulating the principles of the Rule of Law?",
+        answers: [
+            {text: "Thomas Jefferson", correct: false},
+            {text: "John Locke", correct: true},
+            {text: "Karl Marx", correct: false},
+            {text: "Confucius", correct: false}
+        ],
+        explanation: "John Locke, an English philosopher, is often credited with promoting and articulating the principles of the Rule of Law. His ideas on natural rights, limited government, and the rule of law had a profound influence on the development of democratic principles."
+    },
+    {
+        question: "Who is the legal scholar most closely associated with the concept of the Rule of Law and its articulation, particularly in the context of the British legal system?",
+        answers: [
+            {text: "Thomas Hobbes", correct: false},
+            {text: "John Locke", correct: false},
+            {text: "A.V. Dicey", correct: true},
+            {text: "Jean-Jacques Rousseau", correct: false}
+        ],
+        explanation: "A.V. Dicey, or Albert Venn Dicey, is the legal scholar most closely associated with the concept of the Rule of Law, particularly in the context of the British legal system. His work, &quot;Introduction to the Study of the Law of the Constitution&quot; (1885), played a significant role in defining and explaining the principles of the Rule of Law."
+    },
+    {
+        question: "What is the term for a governance system in which there is no one above a specific authority, and all individuals, including government officials, are subject to and accountable under the law?",
+        answers: [
+            {text: "Autocracy", correct: false},
+            {text: "Oligarchy", correct: false},
+            {text: "Rule of Law", correct: true},
+            {text: "Monarchy", correct: false}
+        ],
+        explanation: "The Rule of Law is the concept that everyone, including government officials, is subject to and accountable under the law, ensuring that there is no one above the law in a well-functioning governance system. Autocracy refers to a system of government where one person holds absolute power, while oligarchy and monarchy describe different forms of government where power is concentrated in the hands of a few or a single ruler, respectively."
+    },
+    {
+        question: "What does the term &quot;half-hour time&quot; refer to in a parliamentary system?",
+        answers: [
+            {text: "The duration of a typical parliamentary session, which lasts for half an hour.", correct: false},
+            {text: "The time allocated for a coffee break during parliamentary debates.", correct: false},
+            {text: "A limited period during parliamentary proceedings when Members of Parliament can ask questions without notice.", correct: true},
+            {text: "The time when parliamentary sessions are adjourned for the day.", correct: false}
+        ],
+        explanation: " In a parliamentary system, &quot;half-hour time&quot; refers to a limited period during parliamentary proceedings when Members of Parliament (MPs) can ask questions without notice. This time is often set aside for spontaneous or urgent questions that may not have been scheduled in advance."
+    },
+    {
+        question: "What is the primary basis of nation-building in a federal structure?",
+        answers: [
+            {text: "Homogeneous Ethnicity", correct: false},
+            {text: "Homogeneous Ethnicity ", correct: false},
+            {text: "Regional Autonomy ", correct: true},
+            {text: "Single-Party Dominance ", correct: false}
+        ],
+        explanation: "In a federal structure, regions or states often have a degree of autonomy and self-governance while being part of a larger nation. This helps accommodate diverse cultural, ethnic, and linguistic backgrounds within the framework of a single nation. "
+    },
+    {
+        question: "Which of the following is a key feature of a parliamentary system of government?",
+        answers: [
+            {text: "Separation of powers ", correct: false},
+            {text: "Direct election of the head of state ", correct: true},
+            {text: "Bicameral legislature ", correct: false},
+            {text: "Appointment of the Prime Minister by the judiciary ", correct: false}
+        ],
+        explanation: "A: <b>Separation of powers</b> is a feature more commonly associated with a presidential system of government, where there is a clear distinction between the executive, legislative, and judicial branches.<br>B:<b>Direct election of the head of state</b> In a parliamentary system of government, the head of state, such as a monarch or a president, is typically separate from the head of government (the Prime Minister), and the head of state is often elected directly by the people or through an electoral college, depending on the country's constitution.<br>C:<b>Bicameral legislature</b> can exist in both parliamentary and presidential systems.<br>D:<b>Appointment of the Prime Minister by the judiciary</b> s not a feature of a parliamentary system. In a parliamentary system, the Prime Minister is usually appointed from the majority party or coalition in the legislature and not by the judiciary."
+    },
+    {
+        question: "Which of the following is a role typically performed by the head of state in a parliamentary system?",
+        answers: [
+            {text: "Leading the government and cabinet meetings ", correct: false},
+            {text: "Representing the country in foreign affairs ", correct: true},
+            {text: "Introducing and passing legislation ", correct: false},
+            {text: "Appointing judges to the highest court ", correct: false}
+        ],
+        explanation: "In a parliamentary system, the head of state, such as a monarch or president, often serves as a ceremonial figurehead and represents the country in foreign affairs, while the Prime Minister is responsible for leading the government and cabinet meetings. "
+    },
+    {
+        question: "In a parliamentary system, the executive branch (the government) is drawn from which branch of government?",
+        answers: [
+            {text: "Legislative branch ", correct: true},
+            {text: "Judicial branch ", correct: false},
+            {text: "Executive branch ", correct: false},
+            {text: "Military branch ", correct: false}
+        ],
+        explanation: "In a parliamentary system, the executive branch, including the Prime Minister and the Cabinet, is drawn from the legislative branch, specifically from the majority party or coalition in the legislature. The executive branch is accountable to the legislature, which is a key feature of parliamentary systems. "
+    },
+    {
+        question: "What is one disadvantage of a multi-party system in terms of government formation and stability?",
+        answers: [
+            {text: "Rapid and efficient decision-making ", correct: false},
+            {text: "Difficulty in forming a majority government ", correct: true},
+            {text: "Reduced representation of diverse viewpoints ", correct: false},
+            {text: "Strong centralized power ", correct: false}
+        ],
+        explanation: "SEPTEMBER 7: The Supreme Court (SC) today issued a mandamus order to form a council of ministers within 48 hours in the Koshi Province by concluding that the vote of confidence motion taken by Chief Minister Uddhab Thapa was unconstitutional. A division bench of justices Sapana Pradhan Malla, Dr Kumar Chudal and Nahakul Subedi issued the mandamus order in the name of Koshi Province Chief to form new government as per the Article 168 (3) of the Constitution of Nepal.The SC said that the natural options directed by the constitution should be used accordingly adding that the parliamentary party leader of the single largest party is deemed necessary to be appointed as the Chief Minister. The SC has stated that opting for the alternatives given by the constitution is appropriate in terms of healthy constitutional exercise instead of applying a single option repeatedly.The parliamentary party leader of the CPN (UML) Koshi Province Hikmat Kumar Karki had lodged a petition at the SC stating that the process to obtain vote of confidence by Chief Minister Thapa was unconstitutional.Thapa had taken the vote of confidence from the province assembly on August 23. "
+    },
+    {
+        question: "In which year did the United Nations celebrate as International Human Rights Year?",
+        answers: [
+            { text: "1950", correct: false },
+            { text: "1968", correct: true },
+            { text: "1975", correct: false },
+            { text: "1993", correct: false }
+        ],
+        explanation: "The United Nations celebrated the International Human Rights Year in 1968, launching various activities and initiatives to promote and protect human rights worldwide."
+    },
+    {
+        question: "When was the Nepal Human Rights Commission established in B.S. (Bikram Sambat)?",
+        answers: [
+            { text: "2038 Jeth 13", correct: false },
+            { text: "2047 Jeth 13", correct: false },
+            { text: "2057 Jeth 13", correct: true },
+            { text: "2065 Jeth 13", correct: false }
+        ],
+        explanation: "The National Human Rights Commission of Nepal is an independent and autonomous institution established on 5 June 2000, under the Human Rights Commission Act 1997, passed by the Nepalese Parliament."
+    },
+    {
+        question: "In Bikram Sambat (BS), when did the Parliament of Nepal pass the Convention on the Rights of Persons with Disabilities and its Optional Protocol?",
+        answers: [
+            { text: "Poush 12, 2057 BS", correct: false },
+            { text: "Poush 12, 2066 BS", correct: false },
+            { text: "Poush 12, 2067 BS", correct: true },
+            { text: "Poush 12, 2075 BS", correct: false }
+        ],
+        explanation: "The Parliament of Nepal passed the Convention on the Rights of Persons with Disabilities and its Optional Protocol in Bikram Sambat (BS) in the year 2067 BS."
+    },
+    {
+        question: "What is civil society?",
+        answers: [
+            { text: "A society governed by military rule.", correct: false },
+            { text: "A society in which government plays a minimal role.", correct: false },
+            { text: "A diverse array of non-governmental organizations and associations that promote civic engagement and social change.", correct: true },
+            { text: "A society characterized by a lack of laws and regulations.", correct: false }
+        ],
+        explanation: "Civil society refers to a diverse array of non-governmental organizations and associations that promote civic engagement, social change, and represent the interests of citizens outside of government institutions."
+    },
+    {
+        question: "According to Larry Diamond, what is the definition of civil society?",
+        answers: [
+            { text: "A society where only the political elite are engaged in civic activities.", correct: false },
+            { text: "A realm of organized social life that is distinct from the state and the market, and where citizens voluntarily associate for common purposes.", correct: true },
+            { text: "A society dominated by military organizations.", correct: false },
+            { text: "A society characterized by a lack of government control.", correct: false }
+        ],
+        explanation: "Larry Diamond's definition of civil society is a realm of organized social life that is distinct from the state and the market, where citizens voluntarily associate for common purposes, independent of government control."
+    },
+    {
+        question: "Who is credited with first using the term 'civil society'?",
+        answers: [
+            { text: "Hegel", correct: true },
+            { text: "Karl Marx", correct: false },
+            { text: "Jean-Jacques Rousseau", correct: false },
+            { text: "John Locke", correct: false }
+        ],
+        explanation: "The term 'civil society' is often credited to Hegel, who used it to describe the realm of associations, organizations, and institutions that exist between the state and the individual in society."
+    },
+    {
+        question: "In what type of society does civil service typically operate?",
+        answers: [
+            { text: "Civil service operates in an official capacity.", correct: true },
+            { text: "Civil service operates in an unofficial capacity.", correct: false },
+            { text: "Civil service operates in a military society.", correct: false },
+            { text: "Civil service operates in an agricultural society.", correct: false }
+        ],
+        explanation: "Civil service typically operates in an official capacity within a society, carrying out various administrative functions on behalf of the government."
+    },
+    {
+        question: "Who is credited with the statement that 'civil society is the spirit of a community'?",
+        answers: [
+            { text: "Karl Marx", correct: false },
+            { text: "Alexis de Tocqueville", correct: true },
+            { text: "Jean-Jacques Rousseau", correct: false },
+            { text: "John Locke", correct: false }
+        ],
+        explanation: "The statement that 'civil society is the spirit of a community' is often credited to Alexis de Tocqueville, a French political thinker known for his insights into democracy and society."
+    },
+    {
+        question: "Who is associated with the idea that civil society can be a reflection of dominance within a community?",
+        answers: [
+            { text: "Karl Marx", correct: true },
+            { text: "Alexis de Tocqueville", correct: false },
+            { text: "Jean-Jacques Rousseau", correct: false },
+            { text: "John Locke", correct: false }
+        ],
+        explanation: "Karl Marx is known for his critical analysis of civil society, suggesting that it can be a reflection of dominance and power structures within a community."
+    },
+    {
+        question: "In which year was the Administrative Reform Commission of Nepal first established?",
+        answers: [
+            { text: "2013 BS", correct: false },
+            { text: "2045 BS", correct: false },
+            { text: "2025 BS", correct: false },
+            { text: "2009 BS", correct: true }
+        ],
+        explanation: "The Administrative Reform Commission of Nepal was established in 2009 BS under the leadership of N.M. Buch to study and recommend administrative reforms in the country."
+    },
+    {
+        question: "Apart from N.M. Buch and K.G. Mathrani, who was a member of the Administrative Reform Commission of Nepal in 2009 BS?",
+        answers: [
+            { text: "S.K. Aanand", correct: true },
+            { text: "R.P. Dhungana", correct: false },
+            { text: "M.B. Gurung", correct: false },
+            { text: "P.K. Shrestha", correct: false }
+        ],
+        explanation: "In addition to N.M. Buch and K.G. Mathrani, S.K. Aanand was also a member of the Administrative Reform Commission of Nepal in 2009 BS."
+    },
+    {
+        question: "Who led the Administrative Reform Commission of 2013 BS in Nepal?",
+        answers: [
+            { text: "Tanka Prasad Acharya", correct: true },
+            { text: "Krishna Prasad Bhattarai", correct: false },
+            { text: "Krishna Bahadur Mahara", correct: false },
+            { text: "Keshav Sthapit", correct: false }
+        ],
+        explanation: "The Administrative Reform Commission of 2013 BS in Nepal was led by Tanka Prasad Acharya, the then Prime Minister of Nepal."
+    },
+    {
+        question: "Who led the Administrative Reform Commission of 2013 BS in Nepal?",
+        answers: [
+            { text: "Tanka Prasad Acharya", correct: true },
+            { text: "Surya Bahadur Thapa", correct: false },
+            { text: "Kirti Nidhi Bista", correct: false },
+            { text: "Mahendra Prasad Yadav", correct: false }
+        ],
+        explanation: "The Administrative Reform Commission of 2013 BS in Nepal was led by Tanka Prasad Acharya, who was the Prime Minister of Nepal during that period."
+    },
+    {
+        question: "What was the upper age limit for civil servants recommended by the Administrative Reform Commission of 2025 BS (Jha Commission) led by Bedananda Jha?",
+        answers: [
+            { text: "45 years", correct: false },
+            { text: "50 years", correct: false },
+            { text: "55 years", correct: true },
+            { text: "60 years", correct: false }
+        ],
+        explanation: "The Administrative Reform Commission of 2025 BS (Jha Commission), led by Bedananda Jha, recommended an upper age limit of 55 years for civil servants."
+    },
+    {
+        question: "One of the recommendations of the Jha Commission was to reduce the number of ministries and departments. What other recommendation did they make?",
+        answers: [
+            { text: "Encourage more political appointments.", correct: false },
+            { text: "Follow PSC rules for civil servants' appointments.", correct: true },
+            { text: "Eliminate academic qualifications for civil servants.", correct: false },
+            { text: "Increase the retirement age of civil servants.", correct: false },
+        ],
+        explanation: "The Jha Commission recommended reducing the number of ministries and departments and following Public Service Commission (PSC) rules for civil servants' appointments."
+    },
+    {
+        question: "What were some of the variables that the Jha Commission recommended introducing in the promotion of civil servants?",
+        answers: [
+            { text: "Political affiliations and family connections.", correct: false },
+            { text: "Experience, academic qualifications, and training.", correct: true },
+            { text: "Physical fitness and sports achievements.", correct: false },
+            { text: "Wealth and property holdings.", correct: false }
+        ],
+        explanation: "The Jha Commission recommended introducing variables like experience, academic qualifications, and training in the promotion of civil servants."
+    },
+    {
+        question: "Which of the following institutions or entities did the Jha Commission recommend establishing?",
+        answers: [
+            { text: "Private recruitment agencies for civil servants.", correct: false },
+            { text: "A national circus for entertainment.", correct: false },
+            { text: "A staff college and an administrative court.", correct: true },
+            { text: "A department of paranormal research.", correct: false }
+        ],
+        explanation: "The Jha Commission recommended establishing a staff college and an administrative court among other reforms."
+    },
+    {
+        question: "Who served as the president of the Administrative Reform Commission during the year 2032 BS (1975-1976) in Nepal?",
+        answers: [
+            { text: "Surya Bahadur Thapa", correct: false },
+            { text: "Krishna Prasad Bhattarai", correct: false },
+            { text: "Bhesh Bahadur Thapa", correct: true },
+            { text: "Kirti Nidhi Bista", correct: false }
+        ],
+        explanation: "Bhesh Bahadur Thapa, the then General Administration Minister, served as the president of the Administrative Reform Commission during the year 2032 BS (1975-1976) in Nepal."
+    },
+    {
+        question: "When did the Administrative Reform Commission of 2032 BS (1975-1976) submit its report?",
+        answers: [
+            { text: "2032 Ashadh 20", correct: false },
+            { text: "2032 Bhadra 20", correct: false },
+            { text: "2033 Shrawan 20", correct: true },
+            { text: "2033 Ashwin 20", correct: false }
+        ],
+        explanation: "The Administrative Reform Commission of 2032 BS (1975-1976) submitted its report on 2033 Shrawan 20, during the tenure of Prime Minister Tulsi Giri."
+    },
+    {
+        question: "One of the recommendations of the Administrative Reform Commission of 2032 BS was to combine ministries related to each other on political and administrative grounds. What other recommendation did they make?",
+        answers: [
+            { text: "Add two new ministries, MoCTCA and Population and General Administration Ministry.", correct: true },
+            { text: "Abolish the Public Service Commission (PSC).", correct: false },
+            { text: "Establish a National Sports Council.", correct: false },
+            { text: "Create a Department of Paranormal Research.", correct: false }
+        ],
+        explanation: "The Administrative Reform Commission of 2032 BS recommended combining ministries related to each other on political and administrative grounds and adding two new ministries: MoCTCA and Population and General Administration Ministry."
+    },
+    {
+        question: "What was one of the key recommendations of the Administrative Reform Commission of 2032 BS regarding district-level projects?",
+        answers: [
+            { text: "District-level projects to be the sole responsibility of the Ministry of Finance.", correct: false },
+            { text: "District-level projects to be the sole responsibility of the District Panchayat.", correct: true },
+            { text: "District-level projects to be managed by private companies.", correct: false },
+            { text: "District-level projects to be managed by international organizations.", correct: false }
+        ],
+        explanation: "One of the key recommendations of the Administrative Reform Commission of 2032 BS was that district-level projects should be the sole responsibility of the District Panchayat."
+    },
+    {
+        question: "Which of the following recommendations was NOT made by the Administrative Reform Commission of 2032 BS?",
+        answers: [
+            { text: "Formation of an Institute Council.", correct: false },
+            { text: "Creation of a Permanent Administration Reform Committee.", correct: false },
+            { text: "Setting up a District-Level Fund.", correct: false },
+            { text: "Creation of groups in civil service and division of positions within the grades while classifying the civil service.", correct: true }
+        ],
+        explanation: "The recommendation 'Creation of groups in civil service and division of positions within the grades while classifying the civil service' was not made by the Administrative Reform Commission of 2032 BS."
+    },
+    
+    
+    
+    
+    
+    
+
+    
+    
+        
+    
+
+    
+    
+    
+        
+    
+
+    
+
+    
     
 ];
 
