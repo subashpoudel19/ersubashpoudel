@@ -361,27 +361,6 @@ let questions = [
         explanation: "The recommendation 'Creation of groups in civil service and division of positions within the grades while classifying the civil service' was not made by the Administrative Reform Commission of 2032 BS."
     },
     
-    
-    
-    
-    
-    
-
-    
-    
-        
-    
-
-    
-    
-    
-        
-    
-
-    
-
-    
-    
 ];
 
 // Quotes
