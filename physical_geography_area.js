@@ -252,106 +252,8 @@ let questions = [
             ],
             explanation: "Bagmati Province has the highest population in Nepal."
         },
-        {
-            question: "In what year was the declaration of the referendum made?",
-            answers: [
-                { text: "2037 Baishakh 20", correct: false },
-                { text: "2036 Baisakh 20", correct: false },
-                { text: "2037 Jeth 10", correct: false },
-                { text: "2036 Jeth 10", correct: true }
-            ],
-            explanation: "The declaration of the referendum was made in the year 2036 Jeth 10."
-        },
-        {
-            question: "In which year was the cyber law in Nepal, also known as Electronics Transactions Act (ETA), promulgated?",
-            answers: [
-                { text: "2065", correct: false },
-                { text: "2070", correct: false },
-                { text: "2080", correct: false },
-                { text: "2063", correct: true }
-            ],
-            explanation: "The cyber law in Nepal, also known as the Electronics Transactions Act (ETA), was promulgated in the year 2063."
-        },
-        {
-            question: "What is Nepal's ranking among the countries that have become members of the UN?",
-            answers: [
-                { text: "50th", correct: false },
-                { text: "15th", correct: false },
-                { text: "30th", correct: false },
-                { text: "72nd", correct: true }
-            ],
-            explanation: "Nepal's ranking among the countries that have become members of the UN is 72nd."
-        },
-        {
-            question: "What membership should a country obtain before joining the World Bank?",
-            answers: [
-                { text: "UN", correct: false },
-                { text: "WTO", correct: false },
-                { text: "ASEAN", correct: false },
-                { text: "IMF", correct: true }
-            ],
-            explanation: "A country should obtain membership in the IMF before joining the World Bank."
-        },
-        {
-            question: "What is the punishment for government officials who receive amounts ranging from Rs 1 million to Rs 2.5 million from service seekers under the Prevention of Corruption Act?",
-            answers: [
-                { text: "5-7 years imprisonment", correct: false },
-                { text: "6 months-1 year imprisonment", correct: false },
-                { text: "1-2.5 years imprisonment", correct: false },
-                { text: "2.5-5 years imprisonment", correct: true }
-            ],
-            explanation: "The punishment for government officials who receive amounts ranging from Rs 1 million to Rs 2.5 million from service seekers under the Prevention of Corruption Act is 2.5-5 years imprisonment."
-        },
-        {
-            question: "Who proposed the Principal-Agent theory?",
-            answers: [
-                { text: "Adam Smith", correct: false },
-                { text: "Karl Marx", correct: false },
-                { text: "John Maynard Keynes", correct: false },
-                { text: "Friedrich and Robert Dye", correct: true }
-            ],
-            explanation: "The Principal-Agent theory was proposed by Friedrich and Robert Dye."
-        },
-        {
-            question: "Who serves as the chairman of the committee formed in each district to determine the rent of houses and lands rented by the public body?",
-            answers: [
-                { text: "District Education Officer", correct: false },
-                { text: "District Development Officer", correct: false },
-                { text: "District Attorney", correct: false },
-                { text: "District Chief Officer", correct: true }
-            ],
-            explanation: "The chairman of the committee formed in each district to determine the rent of houses and lands rented by the public body is the District Chief Officer."
-        },
-        {
-            question: "Which of the following is NOT typically formulated by a governing body or authority?",
-            answers: [
-                { text: "Policy", correct: false },
-                { text: "Program", correct: false },
-                { text: "None of the above", correct: true },
-                { text: "Constitution", correct: false }
-            ],
-            explanation: "None of the above is typically formulated by a governing body or authority."
-        },
-        {
-            question: "According to the Employee Adjustment Act 2075, within how many days do bureaucrats need to be present in their office?",
-            answers: [
-                { text: "30 days", correct: false },
-                { text: "15 days", correct: false },
-                { text: "10 days", correct: false },
-                { text: "21 days", correct: true }
-            ],
-            explanation: "According to the Employee Adjustment Act 2075, bureaucrats need to be present in their office within 21 days."
-        },
-        {
-            question: "How many days in advance can the purchaser organize a pre-bid meeting of Bidders, as per the Public Procurement Act and Rules 2063 and 2064?",
-            answers: [
-                { text: "Five (5) days", correct: false },
-                { text: "Fifteen (15) days", correct: false },
-                { text: "Twenty (20) days", correct: false },
-                { text: "Ten (10) days", correct: true }
-            ],
-            explanation: "The purchaser can organize a pre-bid meeting of Bidders ten (10) days in advance, as per the Public Procurement Act and Rules 2063 and 2064."
-        },
+        
+        
         {
             question: "How is the right to employment, as stated in Article 33 of the Constitution of Nepal, implemented by the Government?",
             answers: [
@@ -362,16 +264,7 @@ let questions = [
             ],
             explanation: "The right to employment, as stated in Article 33 of the Constitution of Nepal, is implemented by the Government through the Prime Minister Employment Program, 2075."
             },
-            {
-                question: "In what order did Nepal establish bilateral relations with SAARC countries?",
-                answers: [
-                    { text: "India->Sri Lanka->Pakistan->Afghanistan->Bangladesh->Maldives->Bhutan", correct: true },
-                    { text: "Bhutan->India->Pakistan->Sri Lanka->Maldives->Bangladesh->Afghanistan", correct: false },
-                    { text: "Sri Lanka->India->Pakistan->Bangladesh->Maldives->Bhutan->Afghanistan", correct: false },
-                    { text: "India->Pakistan->Sri Lanka->Bangladesh->Bhutan->Maldives->Afghanistan", correct: false }
-                ],
-                explanation: "Nepal established bilateral relations with SAARC countries in the following order: India->Sri Lanka->Pakistan->Afghanistan->Bangladesh->Maldives->Bhutan."
-            },
+            
                         
     
        
