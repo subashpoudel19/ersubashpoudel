@@ -3,18 +3,18 @@ let questions = [
     {
         question: "Right to Freedom is mentioned in which Article?",
         answers: [
-            {text: "Article 17", correct: false},
+            {text: "Article 17", correct: true},
             {text: "Article 18", correct: false},
             {text: "Article 19", correct: false},
-            {text: "Article 16", correct: true}
+            {text: "Article 16", correct: false}
         ],
         explanation: "Constitution of Nepal 2072"
     }, 
     {
         question: "Right to Equality is mentioned in which Article?",
         answers: [
-            {text: "Article 17", correct: true},
-            {text: "Article 18", correct: false},
+            {text: "Article 17", correct: false},
+            {text: "Article 18", correct: true},
             {text: "Article 19", correct: false},
             {text: "Article 16", correct: false}
         ],
@@ -81,8 +81,177 @@ let questions = [
         ],
         explanation: "Constitution of Nepal 2072"
     },
-
-
+    {
+        "question": "Present constitution of Nepal is the .... constitution of Nepal by development.",
+        "answers": [
+            {"text": "5th", "correct": false},
+            {"text": "6th", "correct": false},
+            {"text": "7th", "correct": true},
+            {"text": "8th", "correct": false}
+        ],
+        "explanation": "Present constitution of Nepal is the 7th constitution of Nepal by development."
+    },
+    {
+        "question": "What is the correct name of the present constitution of Nepal?",
+        "answers": [
+            {"text": "The constitution of Kingdom of Nepal", "correct": false},
+            {"text": "The constitution of Nepal, 2072", "correct": false},
+            {"text": "Interim Constitution of Nepal", "correct": false},
+            {"text": "The constitution of Nepal", "correct": true}
+        ],
+        "explanation": "The correct name of the present constitution of Nepal is The constitution of Nepal."
+    },
+    {
+        "question": "When was the present constitution of Nepal enforced?",
+        "answers": [
+            {"text": "2015 September 20", "correct": true},
+            {"text": "2015 October 20", "correct": false},
+            {"text": "2015 November 20", "correct": false},
+            {"text": "2015 December 20", "correct": false}
+        ],
+        "explanation": "The present constitution of Nepal was enforced on 2015 September 20."
+    },
+    {
+        "question": "Who enforced the present constitution of Nepal?",
+        "answers": [
+            {"text": "House of Representatives", "correct": false},
+            {"text": "National Assembly", "correct": false},
+            {"text": "First Constituent Assembly", "correct": false},
+            {"text": "Second Constituent Assembly", "correct": true}
+        ],
+        "explanation": "The present constitution of Nepal was enforced by the Second Constituent Assembly."
+    },
+    {
+        "question": "Identify the false statement regarding the present constitution of Nepal.",
+        "answers": [
+            {"text": "Sushil Koirala was the prime minister of Nepal at the time of commencement of the constitution of Nepal.", "correct": false},
+            {"text": "The present constitution has a signature of 537 CA members.", "correct": false},
+            {"text": "The then president Ram Baran Yadav declared the implementation of the present constitution.", "correct": false},
+            {"text": "The chairman of constitution drafting committee was Dr. Baburam Bhattarai.", "correct": true},
+            {"text": "The second amendment of the present constitution was made on 2020 June 18.", "correct": false}
+        ],
+        "explanation": "The false statement is: The chairman of constitution drafting committee was Dr. Baburam Bhattarai."
+    },
+    {
+        "question": "Who is the designer of the national flag of Nepal?",
+        "answers": [
+            {"text": "Shankar Kandel", "correct": false},
+            {"text": "Krishna Bir Manandhar", "correct": false},
+            {"text": "Shankar Nath Rimal", "correct": true},
+            {"text": "Krishna Bhakta Nepali", "correct": false}
+        ],
+        "explanation": "The designer of the national flag of Nepal is Shankar Nath Rimal."
+    },
+    {
+        "question": "When was the national flag brought in use for the first time?",
+        "answers": [
+            {"text": "2019 Poush 01", "correct": false},
+            {"text": "2019 Asar 02", "correct": false},
+            {"text": "2019 Jesth 04", "correct": false},
+            {"text": "2019 Bhadra 03", "correct": true}
+        ],
+        "explanation": "The national flag was brought in use for the first time on 2019 Bhadra 03."
+    },
+    {
+        "question": "Who is music composer of national anthem of Nepal?",
+        "answers": [
+            {"text": "Amrit Gurung", "correct": false},
+            {"text": "Prem Dhoj Pradhan", "correct": false},
+            {"text": "Ambar Gurung", "correct": true},
+            {"text": "Byakul Maila", "correct": false}
+        ],
+        "explanation": "The music composer of national anthem of Nepal is Ambar Gurung."
+    },
+    {
+        "question": "When was the national anthem of Nepal revealed by the government of Nepal?",
+        "answers": [
+            {"text": "2064 Shrawan 18", "correct": true},
+            {"text": "2065 Shrawan 18", "correct": false},
+            {"text": "2066 Shrawan 18", "correct": false},
+            {"text": "2067 Shrawan 18", "correct": false}
+        ],
+        "explanation": "The national anthem of Nepal was revealed by the government of Nepal on 2064 Shrawan 18."
+    },
+    {
+        "question": "Who is the designer of coat of arms of Nepal?",
+        "answers": [
+            {"text": "Shankar Nath Rimal", "correct": false},
+            {"text": "Narendra Raj Rajbhandari", "correct": true},
+            {"text": "Krishna Prasad Koirala", "correct": false},
+            {"text": "Tej Bahadur K.C.", "correct": false}
+        ],
+        "explanation": "The designer of coat of arms of Nepal is Narendra Raj Rajbhandari."
+    },
+    {
+        "question": "Which of the following position does not require the nominees to be the citizen of Nepal by descent?",
+        "answers": [
+            {"text": "Chief of Province", "correct": false},
+            {"text": "Ambassador", "correct": true},
+            {"text": "Chief Minister", "correct": false},
+            {"text": "Speaker of the province", "correct": false}
+        ],
+        "explanation": "The position that does not require the nominees to be the citizen of Nepal by descent is Ambassador."
+    },
+    {
+        "question": "Which of the following does not fall under local level?",
+        "answers": [
+            {"text": "Rural Municipality", "correct": false},
+            {"text": "Municipality", "correct": false},
+            {"text": "District Assembly", "correct": false},
+            {"text": "District Coordination Committee", "correct": true}
+        ],
+        "explanation": "The option that does not fall under local level is District Coordination Committee."
+    },
+    {
+        "question": "The second amendment of the present consitution of Nepal was made in which schedule?",
+        "answers": [
+            {"text": "Schedule 2", "correct": false},
+            {"text": "Schedule 3", "correct": true},
+            {"text": "Schedule 4", "correct": false},
+            {"text": "Schedule 5", "correct": false}
+        ],
+        "explanation": "The second amendment of the present consitution of Nepal was made in Schedule 3."
+    },
+    {
+        "question": "The interrelation between Federation, province, and local level is not based on the principle of:",
+        "answers": [
+            {"text": "Co-operation", "correct": false},
+            {"text": "Co-existence", "correct": false},
+            {"text": "Co-ordination", "correct": false},
+            {"text": "Co-foundation", "correct": true}
+        ],
+        "explanation": "The interrelation between Federation, province, and local level is not based on the principle of Co-foundation."
+    },
+    {
+        "question": "The residual power is vested to:",
+        "answers": [
+            {"text": "Federation", "correct": true},
+            {"text": "Province", "correct": false},
+            {"text": "Local Level", "correct": false},
+            {"text": "All of the above", "correct": false}
+        ],
+        "explanation": "The residual power is vested to the Federation."
+    },
+    {
+        "question": "Provision related to engineering is included in the rights of:",
+        "answers": [
+            {"text": "Federation", "correct": false},
+            {"text": "Province", "correct": false},
+            {"text": "Common power of Federation and province", "correct": true},
+            {"text": "Common power of Federation, province, and local level", "correct": false}
+        ],
+        "explanation": "Provision related to engineering is included in the rights of Common power of Federation and province."
+    },
+    {
+        "question": "Which level of government has the specific authority to levy and collect Motor Vehicle Tax as per the schedules of the constitution?",
+        "answers": [
+            {"text": "Federal Government", "correct": false},
+            {"text": "Municipal Government", "correct": false},
+            {"text": "Provincial Government", "correct": true},
+            {"text": "Local Government", "correct": false}
+        ],
+        "explanation": "The Provincial Government has the specific authority to levy and collect Motor Vehicle Tax as per the schedules of the constitution."
+    }
 ];
 
 // Quotes
