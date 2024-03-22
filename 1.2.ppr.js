@@ -75,7 +75,7 @@ let questions = [
                 "answers": [
                     {"text": "Annually", "correct": false},
                     {"text": "Quarterly", "correct": false},
-                    {"text": "Semi-annually", "correct":false},
+                    {"text": "Semi-annually", "correct":true},
                     {"text": "Monthly", "correct": false}
                     ],
                     "explanation": "The standing list shall be published semi-annually by posting it on the notice boards of the District Administration Office and the Treasury Controller Office situated in the district or by putting it on the website of the concerned public entity."
