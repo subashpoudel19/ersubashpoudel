@@ -1,7 +1,5 @@
 
 let questions = [
-    {
-        "questions": [
             {
                 "question": "When was 'The Public Procurement Regulation, 2064 (2007)' published in the Nepal Gazette?",
                 "answers": [
@@ -382,8 +380,8 @@ let questions = [
                 ],
                 "explanation": "The application for the withdrawal or modification of a bid can be made only once, except where the bid already registered has to be modified as a result of modification made by the public entity itself."
             },
-        ],
-    },];
+        ];
+    
 
 // Quotes
 let quotes = [

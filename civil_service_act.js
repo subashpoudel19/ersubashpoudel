@@ -1,6 +1,6 @@
 
 let questions = [
-    {
+    { 
         question: "What was the theme of 'Civil Service Workers Day-2080'?",
         answers: [
             {text: "Clean and Efficient Civil Administration: Prosperity and Good Governance", correct: false},
