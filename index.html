@@ -1,40 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--CSS-->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="imgs/bible.jpeg">
-        <title>Bagmati Province Loksewa Quiz</title>
-    </head>
-    <body>
-        <div class="welcome-text" id="welcome-text">
-            <img src ="https://spsc.bagamati.gov.np/assets/images/logo-small.png" height = "90" width ="160">
-            <h1>Bagmati Province PSC Quiz</h1>
-            <h3>Select one of the topic and we are good to go.</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subash Poudel - Civil Engineer & Researcher</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
 
-            <h4><a href="Bagmati 2079.html">Bagmati PSC 2079 Civil 7th level, 1st paper GK Part</a></h4>
-            <h5><b>१. संविधान एवम् सान्दर्भीक ऐन  नियमहरू (10x1 = 10) </b></h5>
-            <h5><a href="Constitution in Nepal.html">१.१ नेपालकाे संविधानका विविध पक्षहरू</a></h5>
-            <h5>१.२ सार्वजनिक खरिद ऐन २०६३ र <a href="1.2.PPR.html">सार्वजनिक खरिद नियमावली २०६४</a></h5>
-            <!-- <h4><a href="physical_geography_area.html">1.1.1 Physical Geography of Nepal (Areas)</a></h4>
-            <h4><a href="Constitution in Nepal.html">1.8 The Constitution of Nepal (From Part 1 to 5 and Schedules)</a></h4>
-            <h4><a href="governance system.html">1.9 Governance System and Government (Federal, Provincial and Local)</a></h4>
-            <h4><a href="election in Nepal.html">1.9.1 Election in Nepal</a></h4>
-            <h4><a href="civil_service_act.html">1.10 Provision of Civil Service Act</a></h4>
-            <h4><a href="government_regulations.html">Government Regulations</a></h4>
-            <p><a href="">1.10.1 Constitution of Civil Service</a></p>
-            <p><a href="">1.10.2 Organizational Structure</a></p>
-            <p><a href="">1.10.3 Post of Service</a></p>
-            <p><a href="">1.10.4 Fulfillment of Vacancy</a></p>
-            <p><a href="">1.10.5 Code of Conduct</a></p>  -->
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            margin-top: -50px;
+            border-radius: 20px 20px 0 0;
+            padding: 80px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #667eea;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-text h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            background: #f8f9fa;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-item h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        /* Education Section */
+        .education-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .education-item h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .contact-item {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Subash Poudel</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Subash Poudel</h1>
+                <p>MS Student in Civil Engineering | Researcher | Data Scientist</p>
+                <p>Specializing in Hydrology, Climate Change, and Multi-hazard Vulnerability Assessment</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
         </div>
-    </body>
-    <!--JS-->
-    <script src="app.js"></script> 
+    </section>
 
+    <main class="main-content">
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="fade-in">About Me</h2>
+                <div class="about-grid fade-in">
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/250x250/667eea/ffffff?text=SP" alt="Subash Poudel" class="profile-img">
+                    </div>
+                    <div class="about-text">
+                        <h3>Civil Engineer & Researcher</h3>
+                        <p>I am currently pursuing my Master's in Civil Engineering at Jackson State University, where I work as a Graduate Research Assistant under Prof. Dr. Rocky Talchabhadel. My research focuses on hydrological impacts, climate change assessment, and multi-hazard vulnerability of coastal cities.</p>
+                        
+                        <p>With a strong background in civil engineering and data science, I combine traditional engineering principles with modern computational methods to address complex environmental challenges. My work includes developing machine learning models for discharge prediction, conducting vulnerability assessments, and utilizing advanced geospatial tools for environmental analysis.</p>
+                        
+                        <p>I am passionate about using technology and data-driven approaches to create sustainable solutions for infrastructure and environmental challenges, particularly in the context of climate change adaptation and disaster risk reduction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="fade-in">Skills & Expertise</h2>
+                <div class="skills-grid fade-in">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-map-marked-alt"></i> Spatial Analysis & Remote Sensing</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GIS</span>
+                            <span class="skill-tag">Google Earth Engine</span>
+                            <span class="skill-tag">Remote Sensing</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming & Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">C</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-mobile-alt"></i> Web & App Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-drafting-compass"></i> Design & Engineering</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AutoCAD</span>
+                            <span class="skill-tag">Civil 3D</span>
+                            <span class="skill-tag">ETABS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Instrumentation</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Total Station</span>
+                            <span class="skill-tag">Level Machine</span>
+                            <span class="skill-tag">Current Meter</span>
+                            <span class="skill-tag">ERT</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-bar"></i> Data Analysis & ML</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">LSTM</span>
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="fade-in">Professional Experience</h2>
+                <div class="fade-in">
+                    <div class="experience-item">
+                        <h3>Graduate Research Assistant</h3>
+                        <div class="experience-meta">Jackson State University | Fall 2024 - Present</div>
+                        <p>Working under Prof. Dr. Rocky Talchabhadel on the "Hydrological Impacts Computing, Outreach, and Resiliency Partnership (HICORPS) Project" in collaboration with ERDC and WOOLPERT. Conducting research on flood vulnerability assessment of US coastal cities and climate change impact analysis.</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h3>Civil Engineer</h3>
+                        <div class="experience-meta">Civil Aviation Authority of Nepal (CAAN) | February 2023 - May 2023</div>
+                        <p>Oversaw the New Terminal Building Construction Project at Nepalgunj Airport as the client's representative engineer. Collaborated with senior engineers from the consultancy team to successfully address groundwater ingress issues during raft construction, ensuring project stability and efficiency.</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h3>Civil Engineer</h3>
+                        <div class="experience-meta">Quartz Group Pvt. Ltd. | June 2022 - October 2022</div>
+                        <p>Supervised and conducted soil field tests (SPT, DCPT, and ERT), performed laboratory analyses, and prepared interpretative reports. Led soil investigations for infrastructure projects, ensuring accuracy and reliability through Electrical Resistivity Testing (ERT) for subsurface characterization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="fade-in">Education</h2>
+                <div class="fade-in">
+                    <div class="education-item">
+                        <h3>Master of Science in Civil Engineering</h3>
+                        <div class="experience-meta">Jackson State University, Mississippi, USA | 2024 - Present</div>
+                        <p>Graduate Research Assistant with scholarship from HICORPS Project</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>Bachelor's Degree in Civil Engineering</h3>
+                        <div class="experience-meta">Tribhuvan University, Nepal | 2022</div>
+                        <p>Completed final year thesis on Seismic Vulnerability Evaluation and Retrofitting of Existing RCC Structures</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>Higher Secondary Education</h3>
+                        <div class="experience-meta">Valmiki College, Nepal | 2017</div>
+                        <p>Received Mahatma Gandhi Scholarship Scheme by Embassy of India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="fade-in">Featured Projects</h2>
+                <div class="projects-grid fade-in">
+                    <div class="project-card">
+                        <h3>Flood Vulnerability Assessment</h3>
+                        <p>Developing a comprehensive flood vulnerability index for US coastal cities to assess climate change impacts. This research involves multi-hazard vulnerability assessment and data-driven analysis of coastal infrastructure resilience.</p>
+                        <p><strong>Status:</strong> Ongoing Research</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>LSTM Discharge Prediction</h3>
+                        <p>Developed a machine learning model using Long Short-Term Memory (LSTM) networks to predict discharge at HUC2 watershed outlets in the Mississippi River Basin. Complete code and demonstration available on GitHub.</p>
+                        <p><strong>Technologies:</strong> Python, LSTM, Machine Learning</p>
+                        <a href="https://github.com/subashpoudel19/lstm_discharge_prediction" target="_blank" style="color: #667eea;">View on GitHub</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Seismic Vulnerability Assessment</h3>
+                        <p>Comprehensive seismic vulnerability evaluation and retrofitting analysis of existing RCC structures using FEMA guidelines. Included structural modeling with ETABS and proposed retrofitting strategies for enhanced seismic resistance.</p>
+                        <p><strong>Tools:</strong> ETABS, FEMA Guidelines, Structural Analysis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="fade-in">Get In Touch</h2>
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:subash.poudel@students.jsums.edu">subash.poudel@students.jsums.edu</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+17692617161">+1 (769) 261-7161</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Jackson, Mississippi, USA</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-orcid"></i>
+                        <h3>ORCID</h3>
+                        <a href="https://orcid.org/0009-0003-1493-4920" target="_blank">0009-0003-1493-4920</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/subash-poudel-680a12221/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Subash-Poudel-9" target="_blank">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+                <a href="https://orcid.org/0009-0003-1493-4920" target="_blank">
+                    <i class="fab fa-orcid"></i>
+                </a>
+                <a href="https://github.com/subashpoudel19" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Subash Poudel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle (for future implementation)
+        const navToggle = document.createElement('button');
+        navToggle.className = 'nav-toggle';
+        navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        navToggle.style.display = 'none';
+        
+        // Add mobile menu functionality
+        if (window.innerWidth <= 768) {
+            document.querySelector('nav').appendChild(navToggle);
+            navToggle.style.display = 'block';
+        }
+    </script>
+</body>
 </html>
