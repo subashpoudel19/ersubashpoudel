@@ -13,7 +13,9 @@ import {
   MessageSquare,
   FileText,
   User,
-  Building
+  Building,
+  ExternalLink,
+  GraduationCap
 } from 'lucide-react'
 
 export const Contact = () => {
@@ -59,8 +61,8 @@ export const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'contact@ersubashpoudel.com.np',
-      link: 'mailto:contact@ersubashpoudel.com.np'
+      value: 'poudelsubash89@gmail.com',
+      link: 'mailto:poudelsubash89@gmail.com'
     },
     {
       icon: Phone,
@@ -80,14 +82,26 @@ export const Contact = () => {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/in/subashpoudel',
+      url: 'https://www.linkedin.com/in/subash-poudel-680a12221/',
       color: 'bg-blue-600 hover:bg-blue-700'
     },
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/subashpoudel',
+      url: 'https://github.com/ersubashpoudel',
       color: 'bg-gray-800 hover:bg-gray-900'
+    },
+    {
+      name: 'ORCID',
+      icon: ExternalLink,
+      url: 'https://orcid.org/0009-0003-1493-4920',
+      color: 'bg-green-600 hover:bg-green-700'
+    },
+    {
+      name: 'ResearchGate',
+      icon: GraduationCap,
+      url: 'https://www.researchgate.net/profile/Subash-Poudel-9',
+      color: 'bg-cyan-600 hover:bg-cyan-700'
     }
   ]
 

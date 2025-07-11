@@ -98,8 +98,8 @@ const generateStructuredData = (meta) => {
     url: meta.url,
     image: meta.image,
     sameAs: [
-      'https://linkedin.com/in/subashpoudel',
-      'https://github.com/subashpoudel'
+      'https://www.linkedin.com/in/subash-poudel-680a12221/',
+      'https://github.com/ersubashpoudel'
     ],
     address: {
       '@type': 'PostalAddress',
