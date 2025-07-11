@@ -10,20 +10,6 @@
     <meta name="author" content="Subash Poudel">
     <meta name="robots" content="index, follow">
     
-    <!-- Dark mode initialization script - must run before any CSS -->
-    <script>
-      // Set dark mode immediately to prevent flash of light content
-      (function() {
-        const savedDarkMode = localStorage.getItem('darkMode');
-        const prefersDark = savedDarkMode !== null ? savedDarkMode === 'true' : true; // Default to dark mode
-        if (prefersDark) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-        }
-      })();
-    </script>
-    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ersubashpoudel.com.np">
