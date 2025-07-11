@@ -1,37 +1,43 @@
 // Contact form utilities
 export const sendContactMessage = async (formData) => {
   try {
-    // For Netlify deployment with Netlify Forms
-    if (window.location.hostname.includes('netlify') || window.location.hostname.includes('ersubashpoudel.com.np')) {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-          'form-name': 'contact-chat',
-          ...formData,
-        }),
-      })
-      
-      if (response.ok) {
-        return { success: true, message: 'Message sent successfully!' }
-      } else {
-        throw new Error('Network response was not ok')
+    // Use Netlify function for secure email sending
+    const response = await fetch('/.netlify/functions/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+    
+    const result = await response.json()
+    
+    if (response.ok && result.success) {
+      return { 
+        success: true, 
+        message: result.message || 'Message sent successfully! I\'ll get back to you within 24-48 hours.' 
       }
+    } else {
+      throw new Error(result.message || 'Failed to send message')
     }
-    
-    // For local development or other deployments
-    // You can integrate with Resend, EmailJS, or other email services here
-    console.log('Contact form submission:', formData)
-    
-    // Simulate successful submission for development
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    return { success: true, message: 'Message sent successfully!' }
     
   } catch (error) {
     console.error('Error sending message:', error)
-    return { success: false, message: 'Failed to send message. Please try again.' }
+    
+    // Fallback for development or if Netlify functions aren't available
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      console.log('Contact form submission (development):', formData)
+      await new Promise(resolve => setTimeout(resolve, 1000))
+      return { 
+        success: true, 
+        message: 'Message logged successfully! (Development mode)' 
+      }
+    }
+    
+    return { 
+      success: false, 
+      message: 'Failed to send message. Please try again or contact me directly at subash.poudel@students.jsums.edu' 
+    }
   }
 }
 

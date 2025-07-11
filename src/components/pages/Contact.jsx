@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
+import { sendContactMessage } from '../../utils/contactUtils'
 import { 
   Mail, 
   Phone, 
@@ -34,16 +35,9 @@ export const Contact = () => {
     setSubmitStatus(null)
 
     try {
-      // Simulate API call - Replace with actual Resend API integration
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-      })
-
-      if (response.ok) {
+      const result = await sendContactMessage(data)
+      
+      if (result.success) {
         setSubmitStatus('success')
         reset()
       } else {
