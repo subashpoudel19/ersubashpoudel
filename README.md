@@ -106,31 +106,25 @@ Content is managed through:
 - **Icons**: Lucide React
 - **Animations**: Framer Motion
 - **Build**: Vite, PostCSS, Autoprefixer
-- **Deployment**: Netlify
+- **Deployment**: GitHub Pages with GitHub Actions
 
 ## 📧 Contact Form Setup
 
-The contact form uses Resend API. To set it up:
+The contact form uses Resend API for email delivery:
 
 1. Sign up for [Resend](https://resend.com)
 2. Get your API key
-3. Add environment variables:
-   ```
-   VITE_RESEND_API_KEY=your_api_key
-   VITE_CONTACT_EMAIL=your_email@domain.com
-   ```
+3. Verify your domain (ersubashpoudel.com.np)
+4. The API key is configured directly in the contact form for GitHub Pages deployment
 
-## 🔧 CMS Setup
+## 🚀 Deployment
 
-### Netlify Identity (Recommended)
-1. Enable Netlify Identity on your site
-2. Configure Git Gateway in site settings
-3. Invite users through Netlify admin panel
+This site is deployed using GitHub Pages with GitHub Actions:
 
-### GitHub Authentication
-1. Create GitHub OAuth app
-2. Configure in `public/admin/config.yml`
-3. Add credentials to Netlify environment
+1. Automatic deployment on push to master branch
+2. Custom domain: ersubashpoudel.com.np
+3. HTTPS enabled with SSL certificate
+4. Build artifacts automatically generated and deployed
 
 ## 📱 PWA Features
 
