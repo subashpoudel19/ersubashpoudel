@@ -43,7 +43,7 @@ export const Home = () => {
     },
     {
       name: 'GitHub',
-      href: 'https://github.com/subashpoudel19',
+      href: 'https://github.com/ersubashpoudel',
       icon: Github,
       color: 'bg-gray-800 hover:bg-gray-900'
     },

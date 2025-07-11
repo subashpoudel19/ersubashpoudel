@@ -55,8 +55,8 @@ export const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'subash.poudel@students.jsums.edu',
-      link: 'mailto:subash.poudel@students.jsums.edu'
+      value: 'poudelsubash89@gmail.com',
+      link: 'mailto:poudelsubash89@gmail.com'
     },
     {
       icon: Phone,
@@ -82,7 +82,7 @@ export const Contact = () => {
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/subashpoudel19',
+      url: 'https://github.com/ersubashpoudel',
       color: 'bg-gray-800 hover:bg-gray-900'
     },
     {
