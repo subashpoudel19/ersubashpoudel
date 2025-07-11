@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true) // Default to dark mode
   const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
 
@@ -30,7 +30,9 @@ export const Header = () => {
   }, [])
 
   useEffect(() => {
-    const darkMode = localStorage.getItem('darkMode') === 'true'
+    // Check if user has a saved preference, otherwise default to dark mode
+    const savedDarkMode = localStorage.getItem('darkMode')
+    const darkMode = savedDarkMode !== null ? savedDarkMode === 'true' : true // Default to true (dark mode)
     setIsDarkMode(darkMode)
     document.documentElement.classList.toggle('dark', darkMode)
   }, [])
