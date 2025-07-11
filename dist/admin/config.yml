@@ -1,0 +1,114 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Category", name: "category", widget: "select", options: ["Technical Insights", "Industry News", "Project Updates", "Personal"]}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Project Name", name: "title", widget: "string"}
+      - {label: "Client", name: "client", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Project Type", name: "category", widget: "select", options: ["Infrastructure", "Commercial", "Residential", "Research"]}
+      - {label: "Technology Used", name: "technologies", widget: "list"}
+      - {label: "Start Date", name: "start_date", widget: "date"}
+      - {label: "End Date", name: "end_date", widget: "date", required: false}
+      - {label: "Project Value", name: "value", widget: "string"}
+      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Team Size", name: "team", widget: "number"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Image Gallery", name: "gallery", widget: "list", field: {label: "Image", name: "image", widget: "image"}, required: false}
+      - {label: "Project Status", name: "status", widget: "select", options: ["Planning", "In Progress", "Completed", "On Hold"]}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Technical Details", name: "technical_details", widget: "markdown", required: false}
+      - {label: "Challenges", name: "challenges", widget: "text", required: false}
+      - {label: "Solutions", name: "solutions", widget: "text", required: false}
+      - {label: "Results", name: "results", widget: "text", required: false}
+
+  - name: "vlogs"
+    label: "Video Logs"
+    folder: "content/vlogs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "YouTube Video ID", name: "youtube_id", widget: "string", hint: "The ID from the YouTube URL (e.g., dQw4w9WgXcQ)"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false, hint: "Optional custom thumbnail (will use YouTube thumbnail if not provided)"}
+      - {label: "Duration", name: "duration", widget: "string", hint: "Video duration (e.g., 15:32)"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Category", name: "category", widget: "select", options: ["Project Walkthrough", "Industry Insights", "Tutorial", "Personal"]}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  - name: "research"
+    label: "Research Papers"
+    folder: "content/research"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "list"}
+      - {label: "Publication", name: "publication", widget: "string"}
+      - {label: "Publication Date", name: "year", widget: "string", pattern: ['^[0-9]{4}$', "Must be a valid year"]}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Type", name: "type", widget: "select", options: ["Journal Article", "Conference Paper", "Technical Report", "Book Chapter"]}
+      - {label: "Abstract", name: "abstract", widget: "text"}
+      - {label: "Keywords", name: "keywords", widget: "list"}
+      - {label: "DOI", name: "doi", widget: "string", required: false}
+      - {label: "Citation Count", name: "citations", widget: "number", required: false}
+      - {label: "PDF File", name: "pdf_file", widget: "file", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/pages/about.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Professional Summary", name: "summary", widget: "text"}
+          - {label: "Profile Image", name: "profile_image", widget: "image"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "content/settings/general.md"
+        fields:
+          - {label: "Site Title", name: "site_title", widget: "string"}
+          - {label: "Site Description", name: "site_description", widget: "text"}
+          - {label: "Contact Email", name: "contact_email", widget: "string"}
+          - {label: "Contact Phone", name: "contact_phone", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Social Media Links", name: "social_media", widget: "object", fields: [
+              {label: "LinkedIn", name: "linkedin", widget: "string", required: false},
+              {label: "GitHub", name: "github", widget: "string", required: false},
+              {label: "Twitter", name: "twitter", widget: "string", required: false}
+            ]}
+          - {label: "SEO Keywords", name: "seo_keywords", widget: "string", required: false}
