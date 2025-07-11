@@ -27,12 +27,12 @@ export const CV = () => {
   const personalInfo = {
     name: 'Subash Poudel',
     title: 'Senior Civil Engineer',
-    email: 'contact@ersubashpoudel.com.np',
+    email: 'subash.poudel@students.jsums.edu',
     phone: '+977-98xxxxxxxx',
     location: 'Kathmandu, Nepal',
     website: 'https://ersubashpoudel.com.np',
     linkedin: 'https://www.linkedin.com/in/subash-poudel-680a12221/',
-    github: 'https://github.com/ersubashpoudel'
+    github: 'https://github.com/subashpoudel19'
   }
 
   const summary = `Dedicated and innovative Civil Engineer with 8+ years of experience in structural design, 
