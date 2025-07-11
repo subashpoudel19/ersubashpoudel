@@ -14,6 +14,8 @@ import { CV } from './components/pages/CV'
 import { Contact } from './components/pages/Contact'
 
 function App() {
+  console.log('Subash Portfolio: App component loaded successfully');
+  
   return (
     <Router>
       <ScrollToTop />
